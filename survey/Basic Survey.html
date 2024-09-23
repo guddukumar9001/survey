@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Survey</title>
+    
+</head>
+<body>
+
+<h2>Customer Feedback Survey</h2>
+<form action="submit.html" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <br><br><label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <br><label for="satisfaction">How satisfied are you with our service?</label><br>
+    <select id="satisfaction" name="satisfaction" required><br>
+        <option value="">Select...</option>
+        <option value="1">1 - Very Unsatisfied</option>
+        <option value="2">2 - Unsatisfied</option>
+        <option value="3">3 - Neutral</option>
+        <option value="4">4 - Satisfied</option>
+        <option value="5">5 - Very Satisfied</option>
+    </select><br>
+
+    <br><label for="feedback">Additional Feedback:</label><br>
+    <textarea id="feedback" name="feedback" rows="4"></textarea><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
